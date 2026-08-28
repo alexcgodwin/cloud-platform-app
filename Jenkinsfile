@@ -174,6 +174,81 @@ git push origin main
                 }
             }
         }
+
+
+        stage('Approve Staging') {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    input(
+                        message: "Promote ${VERSION} to staging?",
+                        ok: 'Promote to Staging'
+                    )
+                }
+            }
+        }
+
+
+        stage('Promote to Staging') {
+            steps {
+
+                withCredentials([
+                    usernamePassword(
+                        credentialsId: 'github-gitops-credentials',
+                        usernameVariable: 'GIT_USER',
+                        passwordVariable: 'GIT_TOKEN'
+                    )
+                ]) {
+
+                    sh '''#!/usr/bin/env bash
+set -euo pipefail
+
+rm -rf /tmp/cloud-platform-gitops
+rm -f /tmp/git-askpass.sh
+
+cat > /tmp/git-askpass.sh <<'EOF'
+#!/usr/bin/env sh
+
+case "$1" in
+    *Username*)
+        printf '%s\\n' "$GIT_USER"
+        ;;
+    *Password*)
+        printf '%s\\n' "$GIT_TOKEN"
+        ;;
+esac
+EOF
+
+chmod 700 /tmp/git-askpass.sh
+
+export GIT_ASKPASS=/tmp/git-askpass.sh
+export GIT_TERMINAL_PROMPT=0
+
+git clone \
+    "$GITOPS_REPO" \
+    /tmp/cloud-platform-gitops
+
+cd /tmp/cloud-platform-gitops
+
+bash ./scripts/set-images.sh \
+    staging \
+    "$VERSION"
+
+git config user.email \
+    "jenkins@alexcg.local"
+
+git config user.name \
+    "Jenkins CI"
+
+git add environments/staging/kustomization.yaml
+
+git commit \
+    -m "deploy(staging): release $VERSION"
+
+git push origin main
+'''
+                }
+            }
+        }
     }
 
 
