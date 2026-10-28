@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-label="Multi-Service Cloud Application architecture diagram">
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#7ED4FF"/></marker>
+<filter id="soft"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.22"/></filter>
+</defs>
+<rect width="1600" height="1050" fill="#0B1220"/>
+<rect x="0" y="0" width="8" height="1050" fill="#38BDF8"/>
+<text x="64" y="85" fill="#EEF5FF" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700">Multi-Service Cloud Application</text>
+<text x="67" y="123" fill="#ADBED2" font-family="Segoe UI,Arial,sans-serif" font-size="20">Containerized frontend • API • authentication • worker • data</text>
+<rect x="1300" y="43" width="242" height="42" rx="16" fill="#183048" stroke="#294663"/>
+<text x="1421" y="69" text-anchor="middle" fill="#38BDF8" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">EDITABLE  /  DRAW.IO</text>
+<line x1="60" y1="142" x2="1540" y2="142" stroke="#2A405B"/>
+<rect x="50" y="159" width="1500" height="251" rx="17" fill="#101E34" stroke="#29415C" stroke-width="1.3"/>
+<rect x="50" y="178" width="6" height="46" rx="3" fill="#38BDF8"/>
+<text x="73" y="203" fill="#38BDF8" font-size="22" font-family="Segoe UI,Arial,sans-serif" font-weight="700">REQUEST &amp; SERVICE PATH</text>
+<text x="73" y="229" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Docker Compose service topology</text>
+<line x1="421" y1="318" x2="433" y2="318" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<line x1="791" y1="318" x2="803" y2="318" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<line x1="1161" y1="318" x2="1173" y2="318" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<rect x="70" y="253" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="96" cy="283" r="14" fill="#38BDF8" opacity="0.18"/>
+<text x="96" y="288" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">01</text>
+<text x="119" y="288" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Client</text>
+<text x="93" y="347" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">HTTP visitor</text>
+<rect x="440" y="253" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="466" cy="283" r="14" fill="#38BDF8" opacity="0.18"/>
+<text x="466" y="288" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">02</text>
+<text x="489" y="288" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Frontend</text>
+<text x="463" y="347" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">User-facing service</text>
+<rect x="810" y="253" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="836" cy="283" r="14" fill="#38BDF8" opacity="0.18"/>
+<text x="836" y="288" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">03</text>
+<text x="859" y="288" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">API</text>
+<text x="833" y="347" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Business endpoints</text>
+<rect x="1180" y="253" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="1206" cy="283" r="14" fill="#38BDF8" opacity="0.18"/>
+<text x="1206" y="288" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">04</text>
+<text x="1229" y="288" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Auth Service</text>
+<text x="1203" y="347" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Authentication</text>
+<rect x="50" y="437" width="1500" height="251" rx="17" fill="#101E34" stroke="#29415C" stroke-width="1.3"/>
+<rect x="50" y="456" width="6" height="46" rx="3" fill="#34D399"/>
+<text x="73" y="481" fill="#34D399" font-size="22" font-family="Segoe UI,Arial,sans-serif" font-weight="700">DATA &amp; BACKGROUND</text>
+<text x="73" y="507" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">State and asynchronous components</text>
+<rect x="70" y="531" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="96" cy="561" r="14" fill="#34D399" opacity="0.18"/>
+<text x="96" y="566" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">01</text>
+<text x="119" y="566" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Worker</text>
+<text x="93" y="625" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Background operations</text>
+<rect x="440" y="531" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="466" cy="561" r="14" fill="#34D399" opacity="0.18"/>
+<text x="466" y="566" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">02</text>
+<text x="489" y="566" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">PostgreSQL</text>
+<text x="463" y="625" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Relational persistence</text>
+<rect x="810" y="531" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="836" cy="561" r="14" fill="#34D399" opacity="0.18"/>
+<text x="836" y="566" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">03</text>
+<text x="859" y="566" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Redis</text>
+<text x="833" y="625" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Cache / runtime state</text>
+<rect x="1180" y="531" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="1206" cy="561" r="14" fill="#34D399" opacity="0.18"/>
+<text x="1206" y="566" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">04</text>
+<text x="1229" y="566" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Compose Network</text>
+<text x="1203" y="625" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Container connectivity</text>
+<rect x="50" y="715" width="1500" height="251" rx="17" fill="#101E34" stroke="#29415C" stroke-width="1.3"/>
+<rect x="50" y="734" width="6" height="46" rx="3" fill="#A78BFA"/>
+<text x="73" y="759" fill="#A78BFA" font-size="22" font-family="Segoe UI,Arial,sans-serif" font-weight="700">BUILD &amp; TEST</text>
+<text x="73" y="785" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Local development and validation</text>
+<line x1="421" y1="874" x2="433" y2="874" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<line x1="791" y1="874" x2="803" y2="874" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<line x1="1161" y1="874" x2="1173" y2="874" stroke="#7ED4FF" stroke-width="3.5" marker-end="url(#arrow)"/>
+<rect x="70" y="809" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="96" cy="839" r="14" fill="#A78BFA" opacity="0.18"/>
+<text x="96" y="844" text-anchor="middle" fill="#A78BFA" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">01</text>
+<text x="119" y="844" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Service Source</text>
+<text x="93" y="903" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Per-service code</text>
+<rect x="440" y="809" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="466" cy="839" r="14" fill="#A78BFA" opacity="0.18"/>
+<text x="466" y="844" text-anchor="middle" fill="#A78BFA" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">02</text>
+<text x="489" y="844" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Docker Compose</text>
+<text x="463" y="903" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Build and startup</text>
+<rect x="810" y="809" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="836" cy="839" r="14" fill="#A78BFA" opacity="0.18"/>
+<text x="836" y="844" text-anchor="middle" fill="#A78BFA" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">03</text>
+<text x="859" y="844" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Automated Tests</text>
+<text x="833" y="903" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">API and auth unit tests</text>
+<rect x="1180" y="809" width="348" height="131" rx="14" fill="#172741" stroke="#39536E" stroke-width="1.5" filter="url(#soft)"/>
+<circle cx="1206" cy="839" r="14" fill="#A78BFA" opacity="0.18"/>
+<text x="1206" y="844" text-anchor="middle" fill="#A78BFA" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">04</text>
+<text x="1229" y="844" fill="#EEF5FF" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Smoke Tests</text>
+<text x="1203" y="903" fill="#ADBED2" font-size="15" font-family="Segoe UI,Arial,sans-serif">Runtime verification</text>
+<text x="64" y="1024" fill="#ADBED2" font-size="13" font-family="Segoe UI,Arial,sans-serif">SOURCE-ALIGNED REFERENCE DIAGRAM    •    EDITABLE IN DIAGRAMS.NET    •    NOT A LIVE DEPLOYMENT CERTIFICATION</text>
+</svg>
